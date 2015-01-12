@@ -1,0 +1,88 @@
+.content {
+  left: 0;
+  bottom: 5px;
+  position: fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 0;
+  padding: 0 10px;
+  z-index: 9999;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: transparent url(../img/pattern.png) repeat top left;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 3.5em;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  top: 24%;
+  width: 100%;
+  z-index: 1;
+  z-index: 9999;
+}
+
+h1 .line {
+  display: block;
+  border-top: 2px #FFF solid;
+  margin: 30px auto;
+  overflow: hidden;
+  width: 40%;
+  height: 4px;
+  z-index: 9999;
+}
+
+h1 .quote {
+  display: block;
+  margin: 0 auto;
+  max-width: 1180px;
+  z-index: 9999;
+  color: #FFF;
+}
+
+.menu > div {
+  background: rgba(255,255,255,0.45);
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 33%;
+  height: 80px;
+}
+
+.menu > div.logo {
+  margin: 0;
+  float: left;
+}
+
+.menu > div.blog {
+  margin: 0 auto;
+  width: 33.7%;
+}
+
+.menu > div.stuff {
+  float: right;
+}
