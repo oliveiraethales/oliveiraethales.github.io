@@ -86,3 +86,39 @@ h1 .quote {
 .menu > div.stuff {
   float: right;
 }
+
+.stuff .links-mail {
+  background: url(../img/mail.png);
+  height: 32px;
+  width: 32px;
+  display: block;
+}
+
+.stuff .links-github {
+  background: url(../img/github.png);
+  height: 32px;
+  width: 32px;
+  display: block;
+}
+
+.stuff .links-linkedin {
+  background: url(../img/linkedin.png);
+  height: 32px;
+  width: 32px;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  opacity: 0.5;
+  margin: 0 10px;
+}
+
+ul li:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+}
