@@ -65,6 +65,9 @@ h1 .quote {
   color: #FFF;
   font-family: 'Poiret One', cursive;
   letter-spacing: 5px;
+
+  animation: fade 2s;
+  -webkit-animation: fade 2s;
 }
 
 .menu > div {
@@ -75,28 +78,28 @@ h1 .quote {
   height: 80px;
 }
 
-.menu > div.logo {
+.menu .logo {
   margin: 0;
   float: left;
 }
 
-.menu > div.logo > div.name {
+.menu .name {
   height: 28px;
   line-height: 45px;
   font-size: 20px;
   letter-spacing: 3px;
 }
 
-.menu > div.logo > div.desc {
+.menu .logo .desc {
   line-height: 35px;
 }
 
-.menu > div.blog {
+.menu .blog {
   margin: 0 auto;
   width: 33.7%;
 }
 
-.menu > div.stuff {
+.menu .stuff {
   float: right;
 }
 
@@ -137,6 +140,21 @@ hr {
   display: block;
 }
 
+.menu .logo {
+  animation: fade 1s .2s ease-out forwards;
+  -webkit-animation: fade 1s .2s ease-out forwards;
+}
+
+.menu .blog {
+  animation: fade 1s .6s ease-out forwards;
+  -webkit-animation: fade 1s .2s ease-out forwards;
+}
+
+.menu .stuff {
+  animation: fade 1s 1s ease-out forwards;
+  -webkit-animation: fade 1s .2s ease-out forwards;
+}
+
 ul {
   list-style: none;
 }
@@ -151,4 +169,14 @@ ul li {
 ul li:hover {
   opacity: 1;
   -webkit-transition: all 1s ease;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@-webkit-keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
